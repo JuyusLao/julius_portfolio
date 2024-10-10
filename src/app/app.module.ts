@@ -12,6 +12,10 @@ import { SidenavComponent } from './layout/sidenav/sidenav.component';
 import { RouterModule, ROUTES } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LightboxModule } from 'ngx-lightbox';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +25,18 @@ import { LightboxModule } from 'ngx-lightbox';
     ProjectsComponent,
     QualityComponent,
     TopbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    SkillsComponent,
+    ContactsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     CarouselModule,
-    LightboxModule
+    LightboxModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
